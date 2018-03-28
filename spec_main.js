@@ -1,5 +1,6 @@
 'use strict';
 
+
 describe('Super Calculator', () => {
 
     let firstNumber = element(by.model('first'));
@@ -46,5 +47,7 @@ describe('Super Calculator', () => {
         expect(history.count()).toEqual(3);
         expect(history.last().getText()).toContain('1 + 2');
         expect(history.first().getText()).toContain('5 + 6');
+
+        
     });
 });
